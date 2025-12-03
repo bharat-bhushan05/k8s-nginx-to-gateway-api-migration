@@ -660,9 +660,6 @@ Found an issue or have improvements? Feel free to:
 
 ---
 
-*Last Updated: $(date)*  
-*Kubernetes Version: 1.28+*  
-*Gateway API Version: v1.0.0*  
-*NGINX Gateway: v2.0.0*
+
 
 ---
