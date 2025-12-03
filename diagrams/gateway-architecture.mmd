@@ -1,0 +1,7 @@
+flowchart LR
+    Client --> GatewayPort[NodePort 32080]
+    GatewayPort --> GatewayCtrl[NGINX Gateway Controller]
+    GatewayCtrl --> Gateway[Gateway Listener]
+    Gateway --> HTTPRoute[HTTPRoute Routing]
+    HTTPRoute --> SVC[Backend Service]
+    SVC --> Pods

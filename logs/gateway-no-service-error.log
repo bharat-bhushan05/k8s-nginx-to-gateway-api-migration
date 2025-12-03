@@ -1,0 +1,2 @@
+curl http://<gateway-ip> hangs
+Reason: No Service in nginx-gateway namespace

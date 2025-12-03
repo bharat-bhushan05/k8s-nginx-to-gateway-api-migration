@@ -1,0 +1,4 @@
+flowchart TD
+    A[Ingress Webhook Error] --> B[Delete validating webhook]
+    C[GatewayClass Error] --> D[Controller Already Created Class]
+    E[Gateway Not Accessible] --> F[Create Gateway NodePort Service]

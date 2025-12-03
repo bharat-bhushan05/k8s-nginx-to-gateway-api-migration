@@ -1,0 +1,12 @@
+flowchart LR
+    A["Deploy App + Service"] --> B["Install Ingress Controller"]
+    B --> C["Create Ingress Rule"]
+    C --> D["Test Ingress"]
+    D --> E["Install Gateway API"]
+    E --> F["Install NGINX Gateway Controller"]
+    F --> G["Create Gateway"]
+    G --> H["Create HTTPRoute"]
+    H --> I["Create nginx-gateway Service"]
+    I --> J["Test Gateway API"]
+    J --> K["Delete Ingress"]
+    K --> L["Gateway API Active"]

@@ -1,0 +1,6 @@
+flowchart LR
+    Client --> NodePort[NodePort 31050]
+    NodePort --> IngressCtrl[NGINX Ingress Controller]
+    IngressCtrl --> IngressRule[Ingress Rule]
+    IngressRule --> SVC[ClusterIP Service]
+    SVC --> Pods[Backend Pods]

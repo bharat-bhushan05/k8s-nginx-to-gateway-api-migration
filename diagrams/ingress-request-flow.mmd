@@ -1,0 +1,6 @@
+sequenceDiagram
+    Client->>NodePort: HTTP Request
+    NodePort->>IngressCtrl: Forward Traffic
+    IngressCtrl->>IngressRule: Host Match
+    IngressRule->>Service: Backend Routing
+    Service->>Pods: Serve Response

@@ -1,0 +1,7 @@
+sequenceDiagram
+    Client->>NodePort: HTTP
+    NodePort->>GatewayCtrl: Traffic Forwarded
+    GatewayCtrl->>Gateway: Listener Logic
+    Gateway->>HTTPRoute: Match Hostnames
+    HTTPRoute->>Service: Select Backend
+    Service->>Pods: Respond

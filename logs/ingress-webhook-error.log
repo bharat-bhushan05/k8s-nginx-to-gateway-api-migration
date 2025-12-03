@@ -1,0 +1,3 @@
+Error from server (InternalError):
+failed calling webhook "validate.nginx.ingress.kubernetes.io"
+context deadline exceeded
